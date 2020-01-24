@@ -1,0 +1,22 @@
+<div style="margin-left:40px;margin-top:20px;">
+<form method="POST">
+    <input name="text" placeholder="Search for a Commodity">
+    <input type="submit">
+
+</form>
+</div>
+<div style="width: 100%; overflow: hidden;">
+	<div style="width: 600px; height: 800px; float: left;">
+		{%for i in df_com %}
+			<span id="el" style=" display:inline-block; 
+       margin-left: 20px;margin-top:4px; background-color:#fc7978;color:white ;border:2px solid grey"> {{i}}  </span>
+		{%endfor%}
+	
+	</div>
+	<div style="margin-left: 620px;">
+		{%if aframe %}
+		{{aframe |safe}}
+		{%endif%}
+	
+	</div>
+<div>
